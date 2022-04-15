@@ -67,10 +67,13 @@ function calcularArea(){
    resul.innerText =resultadoAreaCuadrado
 
 }
+// ###########################################################
+//pluss 
+//hallando el numero maximo
 let numeros=[1,2,3,7,9]
 
 function find_max(nums) {
-   let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+   let max_num = Number.NEGATIVE_INFINITY; // 
    for (let num of nums) {
       if (num > max_num) {
          console.log(max_num)
