@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <!-- para llamar las funtes de textos-->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+   <title>Document</title>
+</head>
+<body>
+   <div class="login">
+      <h1>Figuras geométrica</h1>
+      <p>Este es el primer taller del curso práctico de javascript
+      </p>
+      <section class="form-container">
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+         <div class ="contenedor-figura">
+            <div class="ladoscuadrado">
+               <div class="l1-right">L</div>
+               <div class="l2-bottom">L</div>
+               <div class="l3-top">L</div>
+               <div class="l4-left">L</div>
+            </div>
+         </div>
+      <form action="/" class="form">
+<!-- dandole el identificador al form de label , nos estamos conectando con el id de  input  -->
+         
+         <p class ="text-introduction" >Recuerda que cada lado = L , del cuadrado son lo mismo , asi que solo puedes introducir uno</p>
+<!-- se le da un identificador al inout con el que querramos modificar con javascript -->
+         <div class="div-text">
+            <label for="text" class="text1">Lado =</label>
+         
+            <input id="numeroAtransformar" type="number" class="input-numero">
+         </div>
+
+<!-- probando el Dom para que escriba el document -->
+         <div class="div-conteiner-input">
+            <div class="div-text2">
+               <label for="text" class="text2">Área</label>
+               <div class="resultado" id="resultado1" ></div>
+            </div>
+            <div class="div-text2" >
+               <label for="text" class="text3" >Perímetro</label>
+               <div class="resultado" id="resultado" ></div>
+            </div>
+         </div>
+<!-- #### cada vez que se dea click al button se activa el button onclick y llama a la funcion dentro   -->
+         <div class="container-button">
+            <button class="primary-button" type="button" onclick="calcularArea()">calcular área</button>
+
+            <button class="primary-button" type="button" onclick="calcularPerimetro()" >calcular perímetro</button>
+         </div>
+         </form>
+      </section>
+   </div>
+
+   <script src="./calc.js"></script>
+   
+</body>
+</html>

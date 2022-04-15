@@ -1,0 +1,160 @@
+/* estructurando el proyecto y sus variables */
+:root{
+   /* identificando los colores  de la paleta de colores mediante variables 
+   para que con las variables se pueda  unificar lo colores*/
+   --very-light-pink:#C7C7C7;
+   --text-input-field:#F7F7F7;
+   --hospital-green :#ACD982;
+   --white : #FFFFFF;
+   --black:#000000;
+
+   /* medidas para el texto (fontsize)*/
+   --sm:14px;
+   --md:16px;
+   --lg:18px;
+}
+
+body{
+   /* buscamos tamaños de letras */
+   /*ajusta todos los margnes a cero*/
+   margin: 0;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+.login{
+   /*  */
+   
+   height:100vh;
+   /* para activar la propiedad de css grid */
+   display: grid;
+   /* centra el contenido tanto vertical como horizontal gracias a grid */
+   place-items: center;
+   
+}
+.form-container{
+   /* display: grid;
+   grid-template-rows:auto 1fr auto; */
+   width: 400px;
+   margin-bottom: 200px;
+   flex-direction:column;
+   /* valores para crear bordeado sombreado */
+   border: 1px solid rgb(221, 217, 217);
+   border-radius: 10px;
+   padding: 4px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   
+}
+.form-container h2{
+   margin:0 20px 50px 20px;
+}
+
+.form{
+   display:flex;
+   flex-direction: column;
+}
+.ladoscuadrado{
+   width:100px;
+   height:100px;
+   border:3px solid #555;
+}
+.contenedor-figura {
+   display:grid;
+   place-items:center;
+}
+.text-introduction{
+   font-size:var(--sm);
+   color: var(--very-light-pink);
+   margin:35px 20px 10px 20px;
+}
+.ladoscuadrado div{
+   width:16px;
+   height:16px;
+   background-color: var(--hospital-green);
+   border-radius: 50%;
+   font-size:var(--sm);
+   font-weight: bold;
+   position:absolute;
+   /* Para centrar el contenido de los circulos */
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   position:relative;
+   
+}
+/* investigar aún para que las posiciones dependan del contenedor y no de la pantalla completa  */
+.l1-right{
+   top:40px;
+   left:105px;
+}
+.l2-bottom{
+   top:90px;
+   left:45px;
+}
+.l3-top{
+   top:-55px;
+   left:45px;
+}
+.l4-left{
+   top:-5px;
+   left:-25px;
+}
+.text{
+   display:flex;
+}
+
+/* #######Donde ingrsamos los valores  */
+.text2{
+   margin:0 20px 0 20px ;
+   text-align:center;
+}
+.input-numero{
+   text-align:center;
+   width:50px
+}
+.div-text{
+   display:flex;
+   justify-content:flex-end;
+   margin: 10px 150px 20px 100px;
+}
+.div-conteiner-input{
+   display:flex;
+   justify-content:space-around;
+   margin: 30px 20px 30px;
+   text-align:center;
+}
+
+.input-numero{
+   border-radius: 5px;
+   border: 1px solid black;
+   height:20px;
+}
+
+.resultado{
+   border-radius: 5px;
+   border: 1px solid black;
+   height:20px;
+}
+
+.primary-button{
+   
+   background-color: var(--hospital-green);
+   border-radius: 8px;
+   /* para eliminar el borde de los elemento */
+   border: none;
+   /* color de las letras */
+   color:var(--white);
+   height: 50px;
+   width: 80%;
+   cursor: pointer;
+   font-size: var(--md);
+   font-weight: bold;
+   margin-bottom: 4px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   width: 300px;
+}
+.container-button{
+   display: grid;
+   justify-content:center;
+   
+}
